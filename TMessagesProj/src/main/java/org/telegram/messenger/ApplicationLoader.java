@@ -26,6 +26,7 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Handler;
 import android.os.PowerManager;
+import android.support.multidex.MultiDexApplication;
 import android.util.Base64;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -41,7 +42,7 @@ import java.io.File;
 import java.io.RandomAccessFile;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class ApplicationLoader extends Application {
+public class ApplicationLoader extends MultiDexApplication {
 
     private GoogleCloudMessaging gcm;
     private AtomicInteger msgId = new AtomicInteger();
