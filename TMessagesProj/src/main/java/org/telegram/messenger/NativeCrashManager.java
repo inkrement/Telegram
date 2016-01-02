@@ -21,6 +21,7 @@ import java.util.UUID;
 public class NativeCrashManager {
 
     public static void handleDumpFiles(Activity activity) {
+        /*
         String[] filenames = searchForDumpFiles();
         for (String dumpFilename : filenames) {
             String logFilename = createLogFile();
@@ -28,6 +29,7 @@ public class NativeCrashManager {
                 uploadDumpAndLog(activity, BuildVars.DEBUG_VERSION ? BuildVars.HOCKEY_APP_HASH_DEBUG : BuildVars.HOCKEY_APP_HASH, dumpFilename, logFilename);
             }
         }
+        */
     }
 
     public static String createLogFile() {
